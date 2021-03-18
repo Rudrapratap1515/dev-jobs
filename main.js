@@ -45,12 +45,8 @@ function searchFilter(){
 }
 
 function fetchPersonalId() {
-    // console.log(this.id);
-    // var queryString = this.id;
-    // window.open("file:///Users/rudrapratapsinghrathore/Documents/Frontend%20Projects/Jobs%20Project/company_details.html" + queryString);
-    // window.location.href = "file:///Users/rudrapratapsinghrathore/Documents/Frontend%20Projects/Jobs%20Project/company_details.html" + this.id;
-    url = `http://127.0.0.1:5500/index.html`
-    location.href = url;
+    console.log(this.id);
+    window.open("file:///Users/rudrapratapsinghrathore/Documents/Frontend%20Projects/Jobs%20Project/company_details.html?id=" + this.id);
 }
 
 function cardCreator(dataArray){

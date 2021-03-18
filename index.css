@@ -3,11 +3,19 @@ body, *{
     margin: 0;
     padding: 0;
 }
+@media (max-width:750px) {
+    .description-card, .how-to-apply-card, .company-name-heading{
+        width: 90%!important;
+    }
+}
 .mb-2{
     margin-bottom: 20px!important;
 }
 .text-white{
     color: white!important;
+}
+.hidden-url{
+    text-decoration: none;
 }
 .container{
     width: 100%;
@@ -97,6 +105,7 @@ input:hover, input:active, input:focus {
     background-color: white;
     border-radius: 7px;
     background: #e6ffff;
+    cursor: pointer;
     box-shadow:  11px 11px 22px #d1e8e8,
              -11px -11px 22px #fbffff;
 }
@@ -189,4 +198,5 @@ input:hover, input:active, input:focus {
 .company-site-button{
     background-color: #b3ffff;
     color: blueviolet;
+    cursor: pointer;
 }
