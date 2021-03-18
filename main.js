@@ -2,6 +2,7 @@ var pageValue = 1;
 var searchedLocation = '';
 var searchedCompany = '';
 var jobCardsBox = '';
+var fullTimeCheck = '';
 function fetchJobs() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -29,7 +30,8 @@ function loadMoreData(){
 function searchFilter(){
     searchedCompany = document.getElementById('searched-company').value;
     searchedLocation = document.getElementById('searched-location').value;
-    if(searchedLocation || searchedCompany){
+    fullTimeCheck = document.getElementById('full-time-check').checked;
+    if(searchedLocation || searchedCompany || fullTimeCheck == true){
         jobCardsBox = '';
         console.log(jobCardsBox);
         var xhttp = new XMLHttpRequest();
@@ -39,7 +41,7 @@ function searchFilter(){
                 cardCreator(JSON.parse(xhttp.responseText))
             }
         };
-        xhttp.open("GET", `https://jobs.github.com/positions.json?description=${searchedCompany}&location=${searchedLocation}&page=${pageValue}`, true);
+        xhttp.open("GET", `https://jobs.github.com/positions.json?description=${searchedCompany}&location=${searchedLocation}&full_time=${fullTimeCheck}&page=${pageValue}`, true);
         xhttp.send();
     }
 }
