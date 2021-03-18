@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Developer Jobs</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body onload="fetchJobs()">
+        <div class="container">
+            <div class="header">
+                <h2>Dev Jobs</h2>
+                <div class="search-inputs">
+                    <div class="title-company">
+                        <i class="fas fa-search"></i>
+                        <input id="searched-company" type="text" placeholder="Filter by title, companies, expertise..."/>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input id="searched-location" type="text" placeholder="Filter by location..."/>
+                    </div>
+                    <div class="full-time-check">
+                        <input id="full-time-check" type="checkbox"/>
+                        <label for="full-time-check">Full Time Only</label>
+                        <button onclick="searchFilter()">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div id="job-card-box" class="job-card-box"></div>
+            <center><button class="load-more-button" onclick="loadMoreData()">Load More...</button></center>
+        </div>
+    </body>
+</html>

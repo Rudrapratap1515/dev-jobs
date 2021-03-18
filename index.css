@@ -1,0 +1,192 @@
+body, *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mb-2{
+    margin-bottom: 20px!important;
+}
+.text-white{
+    color: white!important;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e6ffff;
+}
+input:hover, input:active, input:focus {
+    outline:0px !important;
+}
+.header{
+    width: 100%;
+    height: 140px;
+    background-image: url('https://www.intheblack.com/-/media/intheblack/allimages/sponsored-content/2018/dexus-office-space.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-bottom-left-radius: 100px;
+    padding: 0 15%;
+    position: relative;
+}
+.header h2{
+    color: #2c3543;
+    text-align: center;
+    padding-top: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search-inputs{
+    position: absolute;
+    bottom: -17%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
+    border-radius: 8px;
+}
+.search-inputs div{
+    float: left;
+}
+.search-inputs div input{
+    padding: 24px 24px 24px 0;
+    border: none;
+    border-right: 1px solid #b3ffff;
+}
+.title-company{
+    /* width: 40%; */
+}
+.location i, .title-company i{
+    padding: 0 10px 0 15px;
+    color: blueviolet;
+}
+.full-time-check{
+    background-color: white;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+.full-time-check button, .load-more-button, .company-site-button, .apply-button{
+    padding: 9px 14px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.full-time-check label{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: small;
+    color: rgb(4, 20, 4);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.job-card-box{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-card{
+    width: 30%;
+    margin-right: 3.33333333%;
+    margin-bottom: 8%;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    border-radius: 7px;
+    background: #e6ffff;
+    box-shadow:  11px 11px 22px #d1e8e8,
+             -11px -11px 22px #fbffff;
+}
+.company-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: -40px 0 12px 0;
+    object-fit: contain;
+    background-color: white;
+}
+.time-stamp{
+    font-size: xx-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6b727b;
+    margin-bottom: 12px;
+}
+.post-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2c3543;
+    font-size: small;
+    margin-bottom: 15px;
+}
+.location{
+    font-size: xx-small;
+    font-weight: bold;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.load-more-button{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.company-name-heading{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
+}
+.heading-company-logo{
+    width: 20%;
+    height: 100%;
+    background-color: #b3ffff;
+    object-fit: contain;
+    border-radius: 7px 0 0 7px;
+}
+.heading-company-name{
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+.floating-heading{
+    margin: 40px 0 0 40px;
+}
+.company-site-button{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.description-card, .how-to-apply-card{
+    width: 45%;
+    margin: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px;
+    position: relative;
+}
+.description{
+    font-size: x-small!important;
+    line-height: 2;
+}
+.how-to-apply-card{
+    background-color: blueviolet!important;
+    padding: 40px!important;
+}
+.apply-button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.company-site-button{
+    background-color: #b3ffff;
+    color: blueviolet;
+}
