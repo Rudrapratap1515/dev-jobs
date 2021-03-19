@@ -7,7 +7,6 @@ function fetchJobs() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(JSON.parse(xhttp.responseText))
             cardCreator(JSON.parse(xhttp.responseText))
         }
     };
@@ -33,11 +32,9 @@ function searchFilter(){
     fullTimeCheck = document.getElementById('full-time-check').checked;
     if(searchedLocation || searchedCompany || fullTimeCheck == true){
         emptyContainer();
-        console.log(jobCardsBox);
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(JSON.parse(xhttp.responseText))
                 cardCreator(JSON.parse(xhttp.responseText))
             }
         };
@@ -53,7 +50,6 @@ function emptyContainer(){
 }
 
 function fetchPersonalId() {
-    console.log(this.id);
     window.open("file:///Users/rudrapratapsinghrathore/Documents/Frontend%20Projects/Jobs%20Project/company_details.html?id=" + this.id);
 }
 

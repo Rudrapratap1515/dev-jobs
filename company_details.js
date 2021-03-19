@@ -15,7 +15,6 @@ function getCompanyDetails(companyId){
 }
 
 function getDescription(companyData){
-    console.log(companyData);
     document.getElementsByClassName('heading-company-logo')[0].src = companyData.company_logo || 'https://www.market-research-companies.in//images/default.jpg';
     document.getElementsByClassName('post-name')[0].innerHTML = companyData.company;
     document.getElementsByClassName('post-name')[1].innerHTML = companyData.title;
